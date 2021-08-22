@@ -14,12 +14,12 @@ import {
   StyledCountriesListWrapper,
 } from './countresList.style';
 import Button from '../button/button.component';
-import Sort from '../sort/sort.component';
+import Sort from './sort';
 import { Loader } from '../../utils/styledComponents/loader.style';
 import ArrowDown from '../../images/down-arrow.svg';
 import ArrowUp from '../../images/up-arrow.svg';
 
-const CountriesList = ({ countriesList, loadingState }) => {
+const CountriesList = ({ countriesList, loadingState, title }) => {
   const [sort, setSort] = useState('asc');
   const dispatch = useDispatch();
   const history = useHistory();
@@ -50,7 +50,7 @@ const CountriesList = ({ countriesList, loadingState }) => {
   };
   return (
     <StyledCountriesListWrapper>
-      <StyledCountriesListTitle>United Countries</StyledCountriesListTitle>
+      <StyledCountriesListTitle>{title}</StyledCountriesListTitle>
       <StyledCountriesListSortBtn type="button" onClick={() => setSortBy()}>
         sort by name
         <StyledCountriesArrow src={sort === 'asc' ? ArrowDown : ArrowUp} />

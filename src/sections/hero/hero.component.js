@@ -5,6 +5,7 @@ import { setCountries } from '../../store/countriesSlice';
 import { StyledHeroWrapper } from './hero.style';
 import { StyledCenter } from '../../utils/styledComponents/center.style';
 import CountriesList from '../../components/countriesList/countriesList.component';
+import Browser from './browser/browser.component';
 
 const Hero = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,8 @@ const Hero = () => {
   return (
     <StyledHeroWrapper>
       <StyledCenter>
-        <CountriesList countriesList={countriesState.countriesList} loadingState={loading} />
+        <CountriesList title="United Countries" countriesList={countriesState.countriesList} loadingState={loading} />
+        <Browser />
       </StyledCenter>
     </StyledHeroWrapper>
   );
