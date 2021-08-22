@@ -25,6 +25,7 @@ export const StyledCountryFlag = styled.img`
   width: 800px;
   height: auto;
   margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @media only screen and (max-width: 1024px) {
     width: 70%;
   }

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import {
-  StyledPaginationWrapper,
-  StyledPaginationList,
-  StyledPaginationItem,
   StyledPaginationButton,
+  StyledPaginationItem,
+  StyledPaginationList,
+  StyledPaginationWrapper,
 } from './pagination.style';
 
 const Pagination = ({ countriesPerPage, totalCountries, paginate, currentPage }) => {
