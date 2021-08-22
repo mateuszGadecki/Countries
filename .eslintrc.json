@@ -17,7 +17,6 @@
       "error",
       {
         "singleQuote": true,
-        "arrowParens": "avoid",
         "printWidth": 120,
         "semi": true,
         "tabWidth": 2,
@@ -34,10 +33,14 @@
         "allowSeparatedGroups": true
       }
     ],
-    "no-param-reassign": "error",
-    "no-else-return": "error",
+    "no-param-reassign": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "no-console": 1,
+    "no-unused-expressions": "off",
+    "no-else-return": ["off", { "allowElseIf": true }],
+    "consistent-return": "off"
   }
 }
