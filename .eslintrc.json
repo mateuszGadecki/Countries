@@ -42,6 +42,7 @@
     "no-alert": 0,
     "no-unused-expressions": "off",
     "no-else-return": ["off", { "allowElseIf": true }],
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "no-plusplus": "off"
   }
 }
