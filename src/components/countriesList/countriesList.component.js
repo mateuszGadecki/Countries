@@ -41,7 +41,7 @@ const CountriesList = ({ countriesList, loadingState, title }) => {
             <StyledCountriesListItem onClick={() => setDetails(el)} key={el.name}>
               <StyledCountriesListValue>{el.name}</StyledCountriesListValue>
               <StyledCountriesListValue>{el.population}</StyledCountriesListValue>
-              <Button clicked={() => setDetails()}>Read more</Button>
+              <Button>Read more</Button>
             </StyledCountriesListItem>
           ))}
         </Sort>

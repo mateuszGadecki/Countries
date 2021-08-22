@@ -19,7 +19,7 @@ const CountryDetails = () => {
   const countriesState = useSelector(selectCountries);
   const history = useHistory();
   const handleBack = () => {
-    history.push('/');
+    history.goBack();
   };
 
   const renderList = () => (
