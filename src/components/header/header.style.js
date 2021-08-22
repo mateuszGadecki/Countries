@@ -13,12 +13,20 @@ export const StyledHeaderContent = styled.div`
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  @media only screen and (max-width: 425px) {
+    justify-content: space-between;
+  }
 `;
 
 export const StyledHeaderLogoLink = styled(Link)`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  @media only screen and (max-width: 425px) {
+    position: relative;
+    transform: translateX(0);
+    left: 0;
+  }
 `;
 export const StyledHeaderLogo = styled.img`
   height: 60px;
@@ -35,4 +43,7 @@ export const StyledHeaderNavItem = styled(Link)`
   font-weight: ${({ theme }) => theme.fontWeights.medium};
   text-decoration: none;
   margin-left: 30px;
+  @media only screen and (max-width: 425px) {
+    font-size: ${({ theme }) => theme.fontSizes.medium};
+  }
 `;

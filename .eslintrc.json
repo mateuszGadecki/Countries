@@ -39,6 +39,7 @@
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
     "no-console": 1,
+    "no-alert": 0,
     "no-unused-expressions": "off",
     "no-else-return": ["off", { "allowElseIf": true }],
     "consistent-return": "off"

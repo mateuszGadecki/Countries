@@ -19,4 +19,7 @@ export const StyledFooterText = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSizes.xmedium};
   font-weight: ${({ theme }) => theme.fontWeights.medium};
+  @media only screen and (max-width: 425px) {
+    font-size: ${({ theme }) => theme.fontSizes.medium};
+  }
 `;

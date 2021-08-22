@@ -8,10 +8,9 @@ import {
   StyledCountriesLabels,
   StyledCountriesList,
   StyledCountriesListItem,
-  StyledCountriesListName,
-  StyledCountriesListPopulation,
   StyledCountriesListSortBtn,
   StyledCountriesListTitle,
+  StyledCountriesListValue,
   StyledCountriesListWrapper,
 } from './countresList.style';
 import Button from '../button/button.component';
@@ -40,8 +39,8 @@ const CountriesList = ({ countriesList, loadingState }) => {
         <Sort by={sort}>
           {countriesList.map((el) => (
             <StyledCountriesListItem onClick={() => setDetails(el)} key={el.name}>
-              <StyledCountriesListName>{el.name}</StyledCountriesListName>
-              <StyledCountriesListPopulation>{el.population}</StyledCountriesListPopulation>
+              <StyledCountriesListValue>{el.name}</StyledCountriesListValue>
+              <StyledCountriesListValue>{el.population}</StyledCountriesListValue>
               <Button clicked={() => setDetails()}>Read more</Button>
             </StyledCountriesListItem>
           ))}
@@ -57,7 +56,7 @@ const CountriesList = ({ countriesList, loadingState }) => {
         <StyledCountriesArrow src={sort === 'asc' ? ArrowDown : ArrowUp} />
       </StyledCountriesListSortBtn>
       <StyledCountriesLabels>
-        <StyledCountriesLabel>CountryName</StyledCountriesLabel>
+        <StyledCountriesLabel>Country Name</StyledCountriesLabel>
         <StyledCountriesLabel>Population</StyledCountriesLabel>
       </StyledCountriesLabels>
       <StyledCountriesList>{loadingState ? <Loader /> : renderCountries()}</StyledCountriesList>
