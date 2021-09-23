@@ -1,6 +1,6 @@
 # Countries
 
-Website page that retrieves and displays data from [Api](https://restcountries.eu/). [Demo](https://hopeful-wilson-98657c.netlify.app/)
+Website page that retrieves and displays data from [Api](https://restcountries.eu/).
 
 ---
 
